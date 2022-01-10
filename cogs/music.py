@@ -168,6 +168,10 @@ class Music(commands.Cog):
     async def on_pomice_track_stuck(self, player: Player, track, _):
         await player.do_next()
 
+    async def handle_click(button, interaction):
+        pass
+    
+
     @commands.Cog.listener()
     async def on_pomice_track_exception(self, player: Player, track, _):
         await player.do_next()

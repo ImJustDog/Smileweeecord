@@ -190,5 +190,9 @@ def main():
         print(e)
 
 if __name__ == '__main__':
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(main())
+    try:
+        if __name__ == '__main__':
+            loop = asyncio.get_event_loop()
+            loop.run_until_complete(main())
+    except Exception as e:
+        print(f"Error : {e}")
